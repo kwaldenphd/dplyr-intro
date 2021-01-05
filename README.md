@@ -80,8 +80,8 @@ str(colleges)
 
 10. For example, we can extract the colleges in Indiana from the colleges dataset.
 ```R
-in <- filter(colleges, state =="IN")
-head(in)
+INDIANA <- filter(colleges, state =="IN")
+head(INDIANA)
 ```
 
 11. The first argument given to `filter` is always the data frame.
@@ -115,7 +115,7 @@ In_Mi_Il <- filter(colleges, state == "IN" | state == "MI" | state == "IL")
 
 22. For example, we can return all colleges with fewer than 2,000 undergraduate students in Indiana, Michigan, and Illinois.
 ```R
-small_In_Mi_Il <- filter(colleges, ststate == "IN" | state == "MI" | state == "IL", undergrads < 2000)
+small_In_Mi_Il <- filter(colleges, state == "IN" | state == "MI" | state == "IL", undergrads < 2000)
 ```
 
 23. Common comparison operators in `R` include: 
@@ -360,7 +360,7 @@ head(as.data.frame(colleges_by_state))
 
 86. You can also use the viewer by running the following command.
 ```R
-view(colleges_by_state)
+View(colleges_by_state)
 ```
 
 87. Another option is to select a reduced number of columns to print.
