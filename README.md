@@ -13,6 +13,23 @@ This lab procedure is adapted from and based on Ryan Miller's ["Introduction to 
 
 # Table of Contents
 
+- [What is `dplyr`?](#what-is-dplyr)
+- [Data and Environment Setup](#data-and-environment-setup)
+- [Working With Rows](#working-with-rows)
+  * [Filtering Rows](#filtering-rows)
+  * [Slicing Rows](#slicing-rows)
+  * [Arranging Rows](#arranging-rows)
+  * [Summarizing Rows](#summarizing-rows)
+- [Working With Columns](#working-with-columns)
+  * [Selecting Columns](#selecting-columns)
+  * [Mutating Data (Adding New Columns)](#mutating-data-adding-new-columns)
+- [Groupwise Manipulation](#groupwise-manipulation)
+  * [Combining `group_by` With Other Commands](#combining-group_by-with-other-commands)
+- [Additional Resources](#additional-resources)
+- [Lab Notebook Questions](#lab-notebook-questions)
+
+[Click here](https://raw.githubusercontent.com/kwaldenphd/dplyr-intro/main/dplyr_intro_markdown.Rmd) and select the "Save As" option to download this lab as an RMarkdown file.
+
 # What is `dplyr`?
 
 1. “dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges:
@@ -366,3 +383,15 @@ view(colleges_by_state)
 
 # Lab Notebook Questions
 
+Q1: Open a new R Script, and on the first line add the comment “Q1”. On the line below this comment use the filter function to write code the answers the following questions.
+- How many Maryland colleges are in the colleges data frame? (The abbreviation for Maryland is MD.)
+- How many private Maryland colleges with under 5000 undergraduates are in the colleges data frame?
+
+Q2: Add a comment in your R Script indicating Q2, below the comment write R code to answer the following questions.
+- Which school is most expensive in the entired dataset?
+- Which school has the least expensive tuition in Indiana?
+
+Q3: Add a comment to your R Script indicating you are now answering question 3, below the comment write code that accomplishes the following tasks:
+- Filters the college data to include only private schools
+- Creates a new variable `total.avg.cost4` that is the cumulative average cost of attendance (assuming that a student finishes in four years and that costs increase 3% each year)
+- Summarizes the cumulative average cost of attendance by region using the mean, median, and 90th percentile.
