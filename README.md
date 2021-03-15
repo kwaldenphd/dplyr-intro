@@ -7,6 +7,8 @@ This tutorial is licensed under a <a href="http://creativecommons.org/licenses/b
 
 Data manipulation is central to data analysis and is often the most time consuming portion of an analysis. The dplyr package contains a suite of functions to make data manipulation easier. The core functions of the dplyr package can be thought of as verbs for data manipulation.
 
+[Link to lab overview video](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c5042c8-0615-4d33-8ef3-acd70164e24e) (Panopto, ND users).
+
 ## Acknowledgements
 
 This lab procedure is adapted from and based on Ryan Miller's ["Introduction to dplyr"](https://remiller1450.github.io/s230f19/Data_Wrangling.html) (Fall 2019, Intro to Data Science STA 230 course, Grinnell College).
